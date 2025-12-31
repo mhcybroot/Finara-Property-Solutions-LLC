@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Linkedin, Instagram, Mail, Phone, MapPin, Clock } from 'lucide-react';
-import logo from '../assets/logo.png';
+import { Mail, Phone, MapPin } from 'lucide-react';
+
 
 export default function Footer() {
     return (
@@ -10,18 +10,14 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="footer-col brand-col">
                         <Link to="/" className="footer-logo">
-                            <img src={logo} alt="Finara Property Solutions" style={{ height: '40px', marginBottom: '16px' }} />
-                            <span>FINARA PROPERTY SOLUTIONS LLC</span>
+
+                            <span className="brand-name">FINARA PROPERTY SOLUTIONS LLC</span>
                         </Link>
                         <p className="footer-desc">
                             Professional property preservation and maintenance services in Buffalo, NY.
                             Dedicated to speed, compliance, and quality for asset managers and owners.
                         </p>
-                        <div className="social-links">
-                            <a href="#" aria-label="Facebook"><Facebook size={20} /></a>
-                            <a href="#" aria-label="LinkedIn"><Linkedin size={20} /></a>
-                            <a href="#" aria-label="Instagram"><Instagram size={20} /></a>
-                        </div>
+
                     </div>
 
                     {/* Quick Links */}
@@ -50,10 +46,6 @@ export default function Footer() {
                             <li>
                                 <MapPin size={18} />
                                 <span>Buffalo, NY</span>
-                            </li>
-                            <li>
-                                <Clock size={18} />
-                                <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
                             </li>
                         </ul>
                     </div>
@@ -93,40 +85,27 @@ export default function Footer() {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          font-size: 1.25rem;
           margin-bottom: 24px;
-          color: white;
-          font-weight: 800;
-          letter-spacing: -0.02em;
+          text-decoration: none;
         }
         
+
+        
+        .brand-name {
+            font-size: 1.25rem;
+            color: white;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
         .footer-desc {
             max-width: 350px;
             margin-bottom: 32px;
             line-height: 1.6;
         }
         
-        .social-links {
-            display: flex;
-            gap: 16px;
-        }
-        
-        .social-links a {
-          color: var(--text-dark-secondary);
-          transition: all 0.2s;
-          background: rgba(255,255,255,0.05);
-          padding: 10px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
 
-        .social-links a:hover {
-          color: white;
-          background: var(--accent);
-          transform: translateY(-2px);
-        }
         
         .footer-col h4 {
             color: white;
