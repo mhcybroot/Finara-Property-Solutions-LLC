@@ -1,19 +1,29 @@
 import { Link } from 'react-router-dom';
 import { ShieldCheck, TreePine, Trash2, Hammer, ClipboardCheck, Home, Ruler, Snowflake, PaintBucket, HardHat, Key } from 'lucide-react';
+import serviceLock from '../assets/images/service-lock.png';
+import serviceLawn from '../assets/images/service-lawn.png';
+import serviceDebris from '../assets/images/service-debris.png';
+import featureInspection from '../assets/images/feature-inspection.png';
+import serviceRepair from '../assets/images/service-repair.png';
+import heroServices from '../assets/images/hero-services.png';
+import officeInterior from '../assets/images/office-interior.png';
+import serviceWinter from '../assets/images/service-winter.png';
+import servicePaint from '../assets/images/service-paint.png';
+import heroMain from '../assets/images/hero-main.png';
 
 export default function ServicesPage() {
     const allServices = [
-        { title: 'Securing & Lock Services', icon: <Key size={32} />, desc: 'Complete property securing including re-keying, lock changes, board-ups, and lockbox installation to prevent unauthorized access.' },
-        { title: 'Lawn & Landscape Care', icon: <TreePine size={32} />, desc: 'Regular grass cuts, tree trimming, shrub maintenance, and seasonal yard cleanups to maintain curb appeal.' },
-        { title: 'Debris Removal', icon: <Trash2 size={32} />, desc: 'Full interior and exterior trash-outs, hazard removal, and dumping services for foreclosed or vacant properties.' },
-        { title: 'Initial Inspections & Reports', icon: <ClipboardCheck size={32} />, desc: 'Comprehensive property condition reports, occupancy verification, and damage assessment within 24-48 hours.' },
-        { title: 'General Repairs', icon: <Hammer size={32} />, desc: 'Handyman services covering drywall, plumbing leaks, electrical safety checks, and structural repairs.' },
-        { title: 'Exterior Maintenance', icon: <Home size={32} />, desc: 'Siding repairs, gutter cleaning, pressure washing, and roof tarping/patching.' },
-        { title: 'Interior Maintenance', icon: <Ruler size={32} />, desc: 'Janitorial services, deep cleaning, carpet removal, and system checks.' },
-        { title: 'Winterization', icon: <Snowflake size={32} />, desc: 'Plumbing system draining, anti-freeze application, and dry heat system testing to prevent freeze damage.' },
-        { title: 'Renovation & Refresh', icon: <PaintBucket size={32} />, desc: 'Full painting, flooring replacement, and kitchen/bath upgrades to increase property value.' },
-        { title: 'Health & Safety Repairs', icon: <ShieldCheck size={32} />, desc: 'Mold remediation, trip hazard removal, railing installation, and code compliance fixes.' },
-        { title: 'Full Unit Turnovers', icon: <HardHat size={32} />, desc: 'End-to-end preparation of rental units for new tenants, including cleaning, repairs, and painting.' },
+        { title: 'Securing & Lock Services', icon: <Key size={24} />, img: serviceLock, desc: 'Complete property securing including re-keying, lock changes, board-ups, and lockbox installation to prevent unauthorized access.' },
+        { title: 'Lawn & Landscape Care', icon: <TreePine size={24} />, img: serviceLawn, desc: 'Regular grass cuts, tree trimming, shrub maintenance, and seasonal yard cleanups to maintain curb appeal.' },
+        { title: 'Debris Removal', icon: <Trash2 size={24} />, img: serviceDebris, desc: 'Full interior and exterior trash-outs, hazard removal, and dumping services for foreclosed or vacant properties.' },
+        { title: 'Initial Inspections & Reports', icon: <ClipboardCheck size={24} />, img: featureInspection, desc: 'Comprehensive property condition reports, occupancy verification, and damage assessment within 24-48 hours.' },
+        { title: 'General Repairs', icon: <Hammer size={24} />, img: serviceRepair, desc: 'Handyman services covering drywall, plumbing leaks, electrical safety checks, and structural repairs.' },
+        { title: 'Exterior Maintenance', icon: <Home size={24} />, img: heroServices, desc: 'Siding repairs, gutter cleaning, pressure washing, and roof tarping/patching.' },
+        { title: 'Interior Maintenance', icon: <Ruler size={24} />, img: officeInterior, desc: 'Janitorial services, deep cleaning, carpet removal, and system checks.' },
+        { title: 'Winterization', icon: <Snowflake size={24} />, img: serviceWinter, desc: 'Plumbing system draining, anti-freeze application, and dry heat system testing to prevent freeze damage.' },
+        { title: 'Renovation & Refresh', icon: <PaintBucket size={24} />, img: servicePaint, desc: 'Full painting, flooring replacement, and kitchen/bath upgrades to increase property value.' },
+        { title: 'Health & Safety Repairs', icon: <ShieldCheck size={24} />, img: serviceRepair, desc: 'Mold remediation, trip hazard removal, railing installation, and code compliance fixes.' },
+        { title: 'Full Unit Turnovers', icon: <HardHat size={24} />, img: heroMain, desc: 'End-to-end preparation of rental units for new tenants, including cleaning, repairs, and painting.' },
     ];
 
     return (
@@ -32,7 +42,10 @@ export default function ServicesPage() {
                     <div className="services-grid-large">
                         {allServices.map((service, index) => (
                             <div key={index} className="service-card-large">
-                                <div className="icon-wrapper">{service.icon}</div>
+                                <div className="service-img-container">
+                                    <img src={service.img} alt={service.title} />
+                                    <div className="service-icon-overlay">{service.icon}</div>
+                                </div>
                                 <div className="service-content">
                                     <h3>{service.title}</h3>
                                     <p>{service.desc}</p>
@@ -88,6 +101,10 @@ export default function ServicesPage() {
           animation: fadeInUp 0.8s ease-out 0.2s backwards;
         }
 
+        .section {
+            padding: 140px 0;
+        }
+
         .services-grid-large {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -99,12 +116,10 @@ export default function ServicesPage() {
           background: white;
           border: 1px solid var(--surface-2);
           border-radius: 12px;
-          padding: 40px;
+          overflow: hidden;
           transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
           display: flex;
           flex-direction: column;
-          align-items: center;
-          text-align: center;
           height: 100%;
           box-shadow: var(--shadow-sm);
         }
@@ -120,17 +135,46 @@ export default function ServicesPage() {
           transform: translateY(-8px);
         }
 
-        .icon-wrapper {
-          background-color: var(--accent-light);
-          padding: 16px;
-          border-radius: 12px;
-          color: var(--accent);
-          margin-bottom: 24px;
-          display: inline-flex;
+        .service-img-container {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
         }
         
-        body.dark .icon-wrapper {
-            background-color: rgba(245, 158, 11, 0.1);
+        .service-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .service-card-large:hover .service-img-container img {
+            transform: scale(1.05);
+        }
+        
+        .service-icon-overlay {
+            position: absolute;
+            bottom: -20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+            z-index: 2;
+        }
+
+        .service-content {
+          padding: 40px 32px 32px;
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
         }
 
         .service-card-large h3 {
@@ -149,23 +193,10 @@ export default function ServicesPage() {
             color: var(--text-dark-secondary);
         }
         
-        .section {
-            padding: 140px 0;
-        }
-
-        .services-grid-large {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-          gap: 40px;
-          animation: fadeInUp 0.8s ease-out 0.4s backwards;
-        }
-
-        /* ... existing styles ... */
-
         .additional-info {
             text-align: center;
             margin-top: 100px;
-            margin-bottom: 40px; /* Added spacing */
+            margin-bottom: 40px;
             padding: 60px;
             background-color: var(--bg-light);
             border-radius: 16px;

@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import contactSupport from '../assets/images/contact-support.png';
 
 export default function ContactPage() {
     return (
@@ -14,6 +15,9 @@ export default function ContactPage() {
                 <div className="container">
                     <div className="contact-grid">
                         <div className="contact-info">
+                            <div className="support-visual">
+                                <img src={contactSupport} alt="Customer Support" className="support-img" />
+                            </div>
                             <div className="info-card">
                                 <h2>Get In Touch</h2>
                                 <p className="info-intro">
@@ -136,6 +140,20 @@ export default function ContactPage() {
                 gap: 80px;
             }
         }
+        
+        .support-visual {
+            margin-bottom: 32px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--surface-2);
+        }
+        
+        .support-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
         .info-card {
             background: white;
@@ -143,7 +161,6 @@ export default function ContactPage() {
             border-radius: 16px;
             border: 1px solid var(--surface-2);
             box-shadow: var(--shadow-lg);
-            height: 100%;
         }
         
         body.dark .info-card {

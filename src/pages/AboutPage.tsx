@@ -1,83 +1,96 @@
 import { Link } from 'react-router-dom';
 import { Target, Shield, Users } from 'lucide-react';
+import aboutTeam from '../assets/images/about-team.png';
+import officeInterior from '../assets/images/office-interior.png';
 
 export default function AboutPage() {
-    return (
-        <div className="about-page">
-            <section className="page-header">
-                <div className="container">
-                    <h1>About Finara Property Solutions</h1>
-                    <p>Setting the standard for property preservation in Western New York.</p>
-                </div>
-            </section>
+  return (
+    <div className="about-page">
+      <section className="page-header">
+        <div className="container">
+          <h1>About Finara Property Solutions</h1>
+          <p>Setting the standard for property preservation in Western New York.</p>
+        </div>
+      </section>
 
-            <section className="section">
-                <div className="container">
-                    <div className="section-header">
-                        <h2>Who We Are</h2>
-                    </div>
-                    <div className="about-content">
-                        <div className="about-text text-content">
-                            <p>
-                                Finara Property Solutions LLC is a premier property preservation and maintenance company based in Buffalo, NY.
-                                We specialize in protecting and maintaining assets for banks, asset management companies, and individual investors.
-                            </p>
-                            <p>
-                                Our mission is to provide "LLC-grade" professional services that go beyond the typical handyman approach.
-                                We understand the strict compliance requirements, timelines, and quality standards demanded by the industry.
-                                Whether it's a simple lock change or a full renovation for a rental turnover, we treat every property as if it were our own.
-                            </p>
-                        </div>
-                        <div className="highlight-box">
-                            <h2>Operational Excellence</h2>
-                            <p>
-                                We leverage advanced tracking and reporting to ensure every work order is documented, verified, and completed on time.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <h2>Who We Are</h2>
+          </div>
+          <div className="about-content">
+            <div className="about-visual">
+              <img src={aboutTeam} alt="Our Team" className="about-img" />
+            </div>
+            <div className="about-text text-content">
+              <p>
+                Finara Property Solutions LLC is a premier property preservation and maintenance company based in Buffalo, NY.
+                We specialize in protecting and maintaining assets for banks, asset management companies, and individual investors.
+              </p>
+              <p>
+                Our mission is to provide "LLC-grade" professional services that go beyond the typical handyman approach.
+                We understand the strict compliance requirements, timelines, and quality standards demanded by the industry.
+                Whether it's a simple lock change or a full renovation for a rental turnover, we treat every property as if it were our own.
+              </p>
+            </div>
+          </div>
 
-            <section className="section bg-off-white">
-                <div className="container">
-                    <div className="section-header">
-                        <h2>Our Core Values</h2>
-                    </div>
-                    <div className="values-grid">
-                        <div className="value-card">
-                            <div className="value-icon">
-                                <Shield size={32} />
-                            </div>
-                            <h3>Integrity & Compliance</h3>
-                            <p>We strictly adhere to all local codes and client-specific guidelines to ensure your asset is protected and compliant.</p>
-                        </div>
-                        <div className="value-card">
-                            <div className="value-icon">
-                                <Target size={32} />
-                            </div>
-                            <h3>Speed & Efficiency</h3>
-                            <p>Time is money in property management. We pride ourselves on rapid response times and meeting every deadline.</p>
-                        </div>
-                        <div className="value-card">
-                            <div className="value-icon">
-                                <Users size={32} />
-                            </div>
-                            <h3>Partnership Focus</h3>
-                            <p>We view ourselves as partners in your success, providing transparent reporting and communication at every step.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          <div className="highlight-section">
+            <div className="highlight-box">
+              <div className="highlight-content">
+                <h2>Operational Excellence</h2>
+                <p>
+                  We leverage advanced tracking and reporting to ensure every work order is documented, verified, and completed on time.
+                </p>
+              </div>
+              <div className="highlight-visual">
+                <img src={officeInterior} alt="Office" className="highlight-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <section className="cta-strip">
-                <div className="container cta-content">
-                    <h2>Looking for a reliable partner?</h2>
-                    <p>Let's discuss how we can help manage your portfolio.</p>
-                    <Link to="/contact" className="btn btn-primary-inverse">Contact Us</Link>
-                </div>
-            </section>
+      <section className="section bg-off-white">
+        <div className="container">
+          <div className="section-header">
+            <h2>Our Core Values</h2>
+          </div>
+          <div className="values-grid">
+            <div className="value-card">
+              <div className="value-icon">
+                <Shield size={32} />
+              </div>
+              <h3>Integrity & Compliance</h3>
+              <p>We strictly adhere to all local codes and client-specific guidelines to ensure your asset is protected and compliant.</p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">
+                <Target size={32} />
+              </div>
+              <h3>Speed & Efficiency</h3>
+              <p>Time is money in property management. We pride ourselves on rapid response times and meeting every deadline.</p>
+            </div>
+            <div className="value-card">
+              <div className="value-icon">
+                <Users size={32} />
+              </div>
+              <h3>Partnership Focus</h3>
+              <p>We view ourselves as partners in your success, providing transparent reporting and communication at every step.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <style>{`
+      <section className="cta-strip">
+        <div className="container cta-content">
+          <h2>Looking for a reliable partner?</h2>
+          <p>Let's discuss how we can help manage your portfolio.</p>
+          <Link to="/contact" className="btn btn-primary-inverse">Contact Us</Link>
+        </div>
+      </section>
+
+      <style>{`
         .about-page {
             overflow-x: hidden;
         }
@@ -142,7 +155,8 @@ export default function AboutPage() {
           display: grid;
           grid-template-columns: 1fr;
           gap: 60px;
-          align-items: flex-start;
+          align-items: center;
+          margin-bottom: 80px;
         }
 
         @media (min-width: 992px) {
@@ -150,14 +164,32 @@ export default function AboutPage() {
             grid-template-columns: 1fr 1fr;
           }
         }
+        
+        .about-img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--surface-2);
+        }
+
+        .highlight-section {
+            margin-top: 80px;
+        }
 
         .highlight-box {
           background: white;
           border: 1px solid var(--surface-2);
-          padding: 48px;
           border-radius: 16px;
           box-shadow: var(--shadow-lg);
-          position: relative;
+          overflow: hidden;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+        
+        @media (min-width: 768px) {
+            .highlight-box {
+                grid-template-columns: 1fr 1fr;
+            }
         }
         
         body.dark .highlight-box {
@@ -165,23 +197,28 @@ export default function AboutPage() {
           border-color: var(--glass-border-dark);
         }
         
-        .highlight-box::after {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: 10px;
-            bottom: 10px;
-            border: 2px solid var(--accent);
-            border-radius: 16px;
-            z-index: -1;
-            opacity: 0.1;
+        .highlight-content {
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .highlight-box h2 {
           font-size: 2rem;
           margin-bottom: 24px;
           color: var(--accent);
+        }
+
+        .highlight-visual {
+            height: 100%;
+            min-height: 300px;
+        }
+        
+        .highlight-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .text-content h2 {
@@ -307,6 +344,6 @@ export default function AboutPage() {
           color: white;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }

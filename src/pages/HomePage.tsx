@@ -1,127 +1,133 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, TreePine, Trash2, Hammer, CheckCircle2 } from 'lucide-react';
-import heroBg from '../assets/hero-bg.png';
+import heroBg from '../assets/images/hero-main.png';
+import ctaBg from '../assets/images/cta-keys.png';
+import trustBadge from '../assets/images/trust-badge.png';
 
 export default function HomePage() {
-    const services = [
-        { title: 'Securing & Locks', icon: <ShieldCheck size={32} />, desc: 'Board-ups, re-keying, and lockbox installation.' },
-        { title: 'Lawn & Landscape', icon: <TreePine size={32} />, desc: 'Regular maintenance, mowing, and tree trimming.' },
-        { title: 'Debris Removal', icon: <Trash2 size={32} />, desc: 'Interior and exterior trash outs and dumping.' },
-        { title: 'General Repairs', icon: <Hammer size={32} />, desc: 'Safety repairs, winterization, and structural fixes.' },
-    ];
+  const services = [
+    { title: 'Securing & Locks', icon: <ShieldCheck size={32} />, desc: 'Board-ups, re-keying, and lockbox installation.' },
+    { title: 'Lawn & Landscape', icon: <TreePine size={32} />, desc: 'Regular maintenance, mowing, and tree trimming.' },
+    { title: 'Debris Removal', icon: <Trash2 size={32} />, desc: 'Interior and exterior trash outs and dumping.' },
+    { title: 'General Repairs', icon: <Hammer size={32} />, desc: 'Safety repairs, winterization, and structural fixes.' },
+  ];
 
-    return (
-        <div className="home-page">
-            {/* Hero Section */}
-            <section className="hero">
-                <div className="hero-overlay"></div>
-                <div className="container hero-content">
-                    <h1 className="hero-title">
-                        Professional Property <span className="highlight-text">Solutions</span>
-                    </h1>
-                    <p className="hero-subtitle">
-                        Trusted preservation types: Banks, Asset Managers, and Property Owners in Buffalo, NY. We secure, maintain, and renovate your assets.
-                    </p>
-                    <div className="hero-cta-group">
-                        <Link to="/contact" className="btn btn-primary btn-large">
-                            Get A Quote <ArrowRight size={20} className="btn-icon" />
-                        </Link>
-                        <Link to="/services" className="btn btn-outline-white btn-large">
-                            View Services
-                        </Link>
-                    </div>
-                </div>
-            </section>
+  return (
+    <div className="home-page">
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-overlay"></div>
+        <div className="container hero-content">
+          <h1 className="hero-title">
+            Professional Property <span className="highlight-text">Solutions</span>
+          </h1>
+          <p className="hero-subtitle">
+            Trusted preservation types: Banks, Asset Managers, and Property Owners in Buffalo, NY. We secure, maintain, and renovate your assets.
+          </p>
+          <div className="hero-cta-group">
+            <Link to="/contact" className="btn btn-primary btn-large">
+              Get A Quote <ArrowRight size={20} className="btn-icon" />
+            </Link>
+            <Link to="/services" className="btn btn-outline-white btn-large">
+              View Services
+            </Link>
+          </div>
+        </div>
+      </section>
 
-            {/* Services Preview */}
-            <section className="section services-preview">
-                <div className="container">
-                    <div className="section-header">
-                        <h2>Our Core Services</h2>
-                        <p>Comprehensive property preservation and maintenance solutions.</p>
-                    </div>
+      {/* Services Preview */}
+      <section className="section services-preview">
+        <div className="container">
+          <div className="section-header">
+            <h2>Our Core Services</h2>
+            <p>Comprehensive property preservation and maintenance solutions.</p>
+          </div>
 
-                    <div className="services-grid">
-                        {services.map((service, index) => (
-                            <div key={index} className="service-card">
-                                <div className="service-icon">{service.icon}</div>
-                                <h3>{service.title}</h3>
-                                <p>{service.desc}</p>
-                                <Link to="/services" className="service-link">Learn More</Link>
-                            </div>
-                        ))}
-                    </div>
+          <div className="services-grid">
+            {services.map((service, index) => (
+              <div key={index} className="service-card">
+                <div className="service-icon">{service.icon}</div>
+                <h3>{service.title}</h3>
+                <p>{service.desc}</p>
+                <Link to="/services" className="service-link">Learn More</Link>
+              </div>
+            ))}
+          </div>
 
-                    <div className="view-all-container">
-                        <Link to="/services" className="btn btn-outline">View All Services</Link>
-                    </div>
-                </div>
-            </section>
+          <div className="view-all-container">
+            <Link to="/services" className="btn btn-outline">View All Services</Link>
+          </div>
+        </div>
+      </section>
 
-            {/* Trust / About Preview */}
-            <section className="section trust-section">
-                <div className="container">
-                    <div className="section-header">
-                        <h2>Why Choose Finara?</h2>
-                        <p>We deliver LLC-grade professionalism with every work order.</p>
-                        <p className="trust-lead-centered">Our team is dedicated to speed, compliance, and quality across all services.</p>
-                    </div>
+      {/* Trust / About Preview */}
+      <section className="section trust-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>Why Choose Finara?</h2>
+            <p>We deliver LLC-grade professionalism with every work order.</p>
+            <p className="trust-lead-centered">Our team is dedicated to speed, compliance, and quality across all services.</p>
+          </div>
 
-                    <div className="grid-2-col">
-                        <div className="trust-content">
-                            <ul className="trust-list">
-                                <li>
-                                    <CheckCircle2 size={24} className="trust-icon" />
-                                    <div>
-                                        <strong>Reliable & Timely</strong>
-                                        <p>We meet strict deadlines for inspections and repairs.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <CheckCircle2 size={24} className="trust-icon" />
-                                    <div>
-                                        <strong>Fully Compliant</strong>
-                                        <p>Adhering to all local codes and asset management standards.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <CheckCircle2 size={24} className="trust-icon" />
-                                    <div>
-                                        <strong>Quality Craftsmanship</strong>
-                                        <p>From cleanouts to renovations, we do it right seamlessly.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+          <div className="grid-2-col">
+            <div className="trust-content">
+              <ul className="trust-list">
+                <li>
+                  <CheckCircle2 size={24} className="trust-icon" />
+                  <div>
+                    <strong>Reliable & Timely</strong>
+                    <p>We meet strict deadlines for inspections and repairs.</p>
+                  </div>
+                </li>
+                <li>
+                  <CheckCircle2 size={24} className="trust-icon" />
+                  <div>
+                    <strong>Fully Compliant</strong>
+                    <p>Adhering to all local codes and asset management standards.</p>
+                  </div>
+                </li>
+                <li>
+                  <CheckCircle2 size={24} className="trust-icon" />
+                  <div>
+                    <strong>Quality Craftsmanship</strong>
+                    <p>From cleanouts to renovations, we do it right seamlessly.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-                        <div className="trust-visual">
-                            <div className="stat-card">
-                                <span className="stat-number">100%</span>
-                                <span className="stat-label">Client Satisfaction</span>
-                            </div>
-                            <div className="stat-card">
-                                <span className="stat-number">24/7</span>
-                                <span className="stat-label">Response Time</span>
-                            </div>
-                        </div>
-                    </div>
+            <div className="trust-visual">
+              <div className="trust-badge-container">
+                <img src={trustBadge} alt="Certified Professional" className="trust-badge-img" />
+              </div>
+              <div className="stat-card">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">Client Satisfaction</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-number">24/7</span>
+                <span className="stat-label">Response Time</span>
+              </div>
+            </div>
+          </div>
 
-                    <div className="view-all-container">
-                        <Link to="/about" className="btn btn-primary">About Us</Link>
-                    </div>
-                </div>
-            </section>
+          <div className="view-all-container">
+            <Link to="/about" className="btn btn-primary">About Us</Link>
+          </div>
+        </div>
+      </section>
 
-            {/* CTA Section */}
-            <section className="cta-strip">
-                <div className="container cta-content">
-                    <h2>Ready to secure your property?</h2>
-                    <p>Contact us today for a free consultation or quote.</p>
-                    <Link to="/contact" className="btn btn-primary-inverse">Contact Us Now</Link>
-                </div>
-            </section>
+      {/* CTA Section */}
+      <section className="cta-strip">
+        <div className="cta-overlay"></div>
+        <div className="container cta-content">
+          <h2>Ready to secure your property?</h2>
+          <p>Contact us today for a free consultation or quote.</p>
+          <Link to="/contact" className="btn btn-primary-inverse">Contact Us Now</Link>
+        </div>
+      </section>
 
-            <style>{`
+      <style>{`
         .home-page {
           overflow-x: hidden;
         }
@@ -403,12 +409,32 @@ export default function HomePage() {
             display: grid;
             grid-template-columns: 1fr;
             gap: 24px;
+            grid-auto-flow: dense;
         }
         
         @media (min-width: 768px) {
             .trust-visual {
                 grid-template-columns: 1fr 1fr;
             }
+        }
+        
+        .trust-badge-container {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .trust-badge-img {
+            height: 120px;
+            width: auto;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
         
         .stat-card {
@@ -451,29 +477,29 @@ export default function HomePage() {
         /* CTA Strip */
         .cta-strip {
           padding: 100px 0;
-          background: linear-gradient(135deg, var(--primary), var(--primary-light));
+          background-image: url(${ctaBg});
+          background-size: cover;
+          background-position: center;
           color: white;
           text-align: center;
           position: relative;
           overflow: hidden;
         }
         
+        .cta-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8));
+            z-index: 1;
+        }
+        
         .cta-content {
+            position: relative;
+            z-index: 2;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        
-        .cta-strip::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: radial-gradient(circle at 10% 20%, rgba(245, 158, 11, 0.1) 0%, transparent 20%);
-            pointer-events: none;
         }
 
         .cta-content h2 {
@@ -487,6 +513,6 @@ export default function HomePage() {
           color: var(--text-dark-secondary);
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
