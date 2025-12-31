@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, TreePine, Trash2, Hammer, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, ShieldCheck, TreePine, Trash2, Hammer, CheckCircle2, Snowflake, PaintBucket, Users } from 'lucide-react';
 import heroBg from '../assets/images/hero-main.png';
 import ctaBg from '../assets/images/cta-keys.png';
 import trustBadge from '../assets/images/trust-badge.png';
@@ -10,6 +10,8 @@ export default function HomePage() {
     { title: 'Lawn & Landscape', icon: <TreePine size={32} />, desc: 'Regular maintenance, mowing, and tree trimming.' },
     { title: 'Debris Removal', icon: <Trash2 size={32} />, desc: 'Interior and exterior trash outs and dumping.' },
     { title: 'General Repairs', icon: <Hammer size={32} />, desc: 'Safety repairs, winterization, and structural fixes.' },
+    { title: 'Winterization', icon: <Snowflake size={32} />, desc: 'System draining and anti-freeze application.' },
+    { title: 'Renovation', icon: <PaintBucket size={32} />, desc: 'Full painting, flooring, and property upgrades.' },
   ];
 
   return (
@@ -55,7 +57,9 @@ export default function HomePage() {
           </div>
 
           <div className="view-all-container">
-            <Link to="/services" className="btn btn-outline">View All Services</Link>
+            <Link to="/services" className="btn btn-glass-prominent">
+              View All Services <ArrowRight size={20} />
+            </Link>
           </div>
         </div>
       </section>
@@ -112,7 +116,9 @@ export default function HomePage() {
           </div>
 
           <div className="view-all-container">
-            <Link to="/about" className="btn btn-primary">About Us</Link>
+            <Link to="/about" className="btn btn-outline-strong">
+              Meet The Team <Users size={20} />
+            </Link>
           </div>
         </div>
       </section>

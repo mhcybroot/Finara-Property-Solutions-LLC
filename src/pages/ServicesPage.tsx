@@ -64,29 +64,34 @@ export default function ServicesPage() {
 
             <style>{`
         .page-header {
-          background: linear-gradient(135deg, var(--primary), var(--primary-light));
-          color: white;
-          padding: 100px 0 80px;
-          text-align: center;
           position: relative;
+          background-image: url(${heroServices});
+          background-size: cover;
+          background-position: center;
+          color: white;
+          padding: 140px 0 100px;
+          text-align: center;
           overflow: hidden;
         }
         
         .page-header::before {
              content: '';
              position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             background-image: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.15) 0%, transparent 30%);
-             pointer-events: none;
+             inset: 0;
+             background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+             z-index: 1;
+        }
+
+        .page-header .container {
+            position: relative;
+            z-index: 2;
         }
 
         .page-header h1 {
           font-size: 3rem;
           margin-bottom: 24px;
           animation: fadeInUp 0.8s ease-out;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
         @media (min-width: 768px) {

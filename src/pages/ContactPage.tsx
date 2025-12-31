@@ -1,5 +1,6 @@
-import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import contactSupport from '../assets/images/contact-support.png';
+import featureInspection from '../assets/images/feature-inspection.png';
 
 export default function ContactPage() {
     return (
@@ -47,13 +48,7 @@ export default function ContactPage() {
                                             <span>Buffalo, NY & Surrounding Areas</span>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div className="icon-box"><Clock size={24} /></div>
-                                        <div>
-                                            <strong>Hours</strong>
-                                            <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
-                                        </div>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -88,28 +83,33 @@ export default function ContactPage() {
 
             <style>{`
         .page-header {
-          background: linear-gradient(135deg, var(--primary), var(--primary-light));
-          color: white;
-          padding: 100px 0 80px;
-          text-align: center;
           position: relative;
+          background-image: url(${featureInspection});
+          background-size: cover;
+          background-position: center;
+          color: white;
+          padding: 140px 0 100px;
+          text-align: center;
         }
         
         .page-header::before {
              content: '';
              position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             background-image: radial-gradient(circle at 20% 80%, rgba(245, 158, 11, 0.15) 0%, transparent 30%);
-             pointer-events: none;
+             inset: 0;
+             background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+             z-index: 1;
+        }
+        
+        .page-header .container {
+            position: relative;
+            z-index: 2;
         }
 
         .page-header h1 {
           font-size: 3rem;
           margin-bottom: 24px;
           animation: fadeInUp 0.8s ease-out;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
         
         @media (min-width: 768px) {
