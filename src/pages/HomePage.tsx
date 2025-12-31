@@ -1,10 +1,26 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, ShieldCheck, TreePine, Trash2, Hammer, CheckCircle2, Snowflake, PaintBucket, Users } from 'lucide-react';
+import TiltCard from '../components/TiltCard';
 import heroBg from '../assets/images/hero-main.png';
 import ctaBg from '../assets/images/cta-keys.png';
 import trustBadge from '../assets/images/trust-badge.png';
 
 export default function HomePage() {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePos({
+        x: (e.clientX / window.innerWidth - 0.5) * 2,
+        y: (e.clientY / window.innerHeight - 0.5) * 2,
+      });
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   const services = [
     { title: 'Securing & Locks', icon: <ShieldCheck size={32} />, desc: 'Board-ups, re-keying, and lockbox installation.' },
     { title: 'Lawn & Landscape', icon: <TreePine size={32} />, desc: 'Regular maintenance, mowing, and tree trimming.' },
@@ -19,7 +35,13 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-overlay"></div>
-        <div className="container hero-content">
+        <div
+          className="container hero-content"
+          style={{
+            transform: `translate3d(${mousePos.x * -20}px, ${mousePos.y * -10}px, 0)`,
+            transition: 'transform 0.1s ease-out'
+          }}
+        >
           <h1 className="hero-title">
             Professional Property <span className="highlight-text">Solutions</span>
           </h1>
@@ -47,12 +69,12 @@ export default function HomePage() {
 
           <div className="services-grid">
             {services.map((service, index) => (
-              <div key={index} className="service-card">
+              <TiltCard key={index} className="service-card">
                 <div className="service-icon">{service.icon}</div>
                 <h3>{service.title}</h3>
                 <p>{service.desc}</p>
                 <Link to="/services" className="service-link">Learn More</Link>
-              </div>
+              </TiltCard>
             ))}
           </div>
 
