@@ -146,7 +146,7 @@ ${formData.name}`;
             {/* Support visual banner */}
             <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative">
               <img 
-                src="/assets/contact-support.png" 
+                src="/images/support-landscaping.jpg" 
                 alt="Finara Client Support" 
                 className="w-full h-32 object-cover"
               />

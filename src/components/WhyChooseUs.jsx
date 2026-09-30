@@ -87,13 +87,13 @@ export default function WhyChooseUs() {
             {/* Crew Image Callout */}
             <div className="pt-4 overflow-hidden rounded-2xl border border-slate-200 shadow-sm relative group">
               <img 
-                src="/assets/about-team.png" 
-                alt="Finara Property Solutions Professional Crew" 
+                src="/images/team-landscaping.jpg" 
+                alt="Finara Property Solutions Professional Grounds Crew" 
                 className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
                 <p className="text-xs font-semibold text-white">
-                  Experienced, insured, and certified grounds specialists in Buffalo, NY.
+                  Experienced, insured, and certified landscaping specialists in Buffalo, NY.
                 </p>
               </div>
             </div>

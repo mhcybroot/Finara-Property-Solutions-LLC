@@ -7,7 +7,7 @@ const galleryItems = [
     categoryName: 'Lawn Care & Edging',
     title: 'Manicured Estate Lawn & Striping',
     location: 'Buffalo, NY Residential',
-    image: '/assets/service-lawn.png',
+    image: '/images/gallery_lawn1.jpg',
     details: 'Weekly precision mowing, edge trimming, and turf health management.'
   },
   {
@@ -15,7 +15,7 @@ const galleryItems = [
     categoryName: 'Mulch & Bed Design',
     title: 'Deep Trench Bed with Dark Bark Mulch',
     location: 'Amherst, NY Property',
-    image: '/assets/hero-services.png',
+    image: '/images/gallery_mulch.jpg',
     details: 'Perennial plantings, rock borders, and weed-suppressing organic mulch.'
   },
   {
@@ -23,7 +23,7 @@ const galleryItems = [
     categoryName: 'Commercial Grounds',
     title: 'Corporate Park Perimeter Maintenance',
     location: 'Downtown Buffalo Commercial',
-    image: '/assets/hero-main.png',
+    image: '/images/gallery_commercial.jpg',
     details: 'Full contract groundskeeping, walkway clearing, and code compliance.'
   },
   {
@@ -31,7 +31,7 @@ const galleryItems = [
     categoryName: 'Shrub & Hedge Care',
     title: 'Geometric Privacy Hedge Sculpting',
     location: 'Orchard Park, NY Estate',
-    image: '/assets/service-paint.png',
+    image: '/images/gallery_shrub.jpg',
     details: 'Precision level hedge pruning and ornamental bush rejuvenation.'
   },
   {
@@ -39,7 +39,7 @@ const galleryItems = [
     categoryName: 'Seasonal Cleanup',
     title: 'Fall Leaf Removal & Lawn Dethatching',
     location: 'Cheektowaga, NY',
-    image: '/assets/service-debris.png',
+    image: '/images/gallery_cleanup.jpg',
     details: 'Complete foliage vacuuming, aeration, and winter grass prep.'
   },
   {
@@ -47,7 +47,7 @@ const galleryItems = [
     categoryName: 'Lawn Care & Edging',
     title: 'Vibrant Green Turf Restoration',
     location: 'Tonawanda, NY Residential',
-    image: '/assets/service-repair.png',
+    image: '/images/gallery_lawn2.jpg',
     details: 'Overseeding, custom aeration, and scheduled fertilization treatments.'
   }
 ];

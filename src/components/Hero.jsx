@@ -84,7 +84,7 @@ export default function Hero() {
               {/* Main Image Card */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
                 <img
-                  src="/assets/hero-main.png"
+                  src="/images/hero_landscape.jpg"
                   alt="Manicured lawn care and landscaping in Buffalo, NY by Finara Property Solutions"
                   className="w-full h-[440px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
                 />
