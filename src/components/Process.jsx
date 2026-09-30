@@ -55,10 +55,10 @@ export default function Process() {
               >
                 {/* Step badge */}
                 <div className="flex items-center justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-finara-50 text-finara-700 flex items-center justify-center group-hover:bg-finara-700 group-hover:text-white transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-finara-50 text-finara-600 flex items-center justify-center group-hover:bg-finara-500 group-hover:text-slate-950 transition-colors">
                     <IconComp className="w-6 h-6" />
                   </div>
-                  <span className="text-3xl font-black tracking-tight text-finara-200 group-hover:text-finara-400 transition-colors">
+                  <span className="text-3xl font-black tracking-tight text-finara-200 group-hover:text-finara-500 transition-colors">
                     {step.number}
                   </span>
                 </div>

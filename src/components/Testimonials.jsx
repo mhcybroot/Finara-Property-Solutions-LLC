@@ -64,7 +64,7 @@ export default function Testimonials() {
 
               <div className="pt-5 mt-4 border-t border-slate-100">
                 <div className="font-bold text-sm text-slate-900">{review.name}</div>
-                <div className="text-xs text-finara-700 font-bold">{review.role} • {review.location}</div>
+                <div className="text-xs text-finara-600 font-bold">{review.role} • {review.location}</div>
               </div>
             </div>
           ))}

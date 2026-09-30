@@ -177,10 +177,10 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="w-full inline-flex items-center justify-center gap-2 bg-finara-700 hover:bg-finara-800 text-white px-5 py-3 rounded-lg font-bold text-sm transition-all text-center"
+                className="w-full inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-slate-950 px-5 py-3 rounded-lg font-black text-sm transition-all text-center shadow-md shadow-amber-500/25"
               >
                 <span>Request Free Estimate</span>
-                <ChevronRight className="w-4 h-4" />
+                <ChevronRight className="w-4 h-4 text-slate-950" />
               </a>
             </div>
           </div>
