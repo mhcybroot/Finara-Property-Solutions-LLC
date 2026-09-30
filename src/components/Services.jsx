@@ -16,42 +16,42 @@ const services = [
     title: 'Precision Lawn Mowing & Edging',
     description: 'Scheduled residential and commercial turf mowing, string-trimming around fences & obstacles, crisp pavement edging, and clean blow-off.',
     features: ['Even blade height control', 'Razor-sharp walkway edging', 'Clipping bagging or mulching', 'Scheduled weekly or bi-weekly'],
-    image: '/images/lawn_mowing.jpg'
+    image: '/assets/service-lawn.png'
   },
   {
     icon: Trees,
     title: 'Landscape Design & Planting',
     description: 'Enhancing curb appeal with curated perennial installations, ornamental shrubs, flowering beds, decorative stones, and modern border designs.',
     features: ['Custom landscape layout', 'Western NY climate-adapted flora', 'Soil prep & root fertilization', 'Weed barrier installation'],
-    image: '/images/landscape_planting.jpg'
+    image: '/assets/hero-services.png'
   },
   {
     icon: Layers,
     title: 'Premium Mulching & Bed Care',
     description: 'Deep trench bed edging and fresh premium triple-shredded mulch application to retain moisture, suppress weed growth, and protect root systems.',
     features: ['Black, brown, and natural mulch', 'Deep perimeter trenching', 'Pre-emergent weed protection', 'Shrub base preservation'],
-    image: '/images/mulch_bed.jpg'
+    image: '/assets/service-repair.png'
   },
   {
     icon: Wind,
     title: 'Spring & Fall Seasonal Cleanups',
     description: 'Comprehensive seasonal property overhauls. Thorough leaf vacuuming/clearing, perennial cutbacks, lawn dethatching, and post-winter rejuvenation.',
     features: ['Complete leaf & debris removal', 'Lawn aeration & overseeding', 'Branch & deadwood clearing', 'Winterization preparation'],
-    image: '/images/seasonal_cleanup.jpg'
+    image: '/assets/service-debris.png'
   },
   {
     icon: SunMedium,
     title: 'Hedge, Shrub & Bush Trimming',
     description: 'Artistic and horticultural pruning of ornamental bushes, privacy hedges, and small ornamental trees to promote healthy, dense growth.',
     features: ['Topiary and geometric shaping', 'Dead foliage elimination', 'Suckers & wild shoot removal', 'Seasonal structural pruning'],
-    image: '/images/hedge_trimming.jpg'
+    image: '/assets/service-paint.png'
   },
   {
     icon: Building2,
     title: 'Commercial & Asset Grounds Care',
     description: 'Contract grounds maintenance tailored for Buffalo commercial complexes, HOA communities, multi-family residences, and corporate facilities.',
     features: ['Full compliance documentation', 'Rapid turnaround crews', 'High-traffic curb presentation', 'Flexible commercial billing'],
-    image: '/images/commercial_grounds.jpg'
+    image: '/assets/service-winter.png'
   }
 ];
 

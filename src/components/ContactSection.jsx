@@ -143,6 +143,21 @@ ${formData.name}`;
               </span>
             </div>
 
+            {/* Support visual banner */}
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative">
+              <img 
+                src="/assets/contact-support.png" 
+                alt="Finara Client Support" 
+                className="w-full h-32 object-cover"
+              />
+              <div className="absolute inset-0 bg-slate-900/60 flex items-center px-5 text-white">
+                <div>
+                  <p className="font-bold text-sm">Need Rapid Ground Maintenance?</p>
+                  <p className="text-xs text-slate-300">Call (716) 274-8090 for fast local dispatch in Buffalo.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Right Column: Interactive Estimate Form */}

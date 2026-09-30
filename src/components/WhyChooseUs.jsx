@@ -75,13 +75,27 @@ export default function WhyChooseUs() {
               </div>
             </div>
 
-            <div className="pt-2">
+            <div className="pt-2 flex flex-col sm:flex-row items-center gap-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-finara-500 hover:bg-finara-600 text-slate-950 font-black text-sm px-6 py-3.5 rounded-xl shadow-md shadow-amber-500/20 transition-all"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-finara-500 hover:bg-finara-600 text-slate-950 font-black text-sm px-6 py-3.5 rounded-xl shadow-md shadow-amber-500/20 transition-all"
               >
                 Schedule Service in Buffalo
               </a>
+            </div>
+
+            {/* Crew Image Callout */}
+            <div className="pt-4 overflow-hidden rounded-2xl border border-slate-200 shadow-sm relative group">
+              <img 
+                src="/assets/about-team.png" 
+                alt="Finara Property Solutions Professional Crew" 
+                className="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                <p className="text-xs font-semibold text-white">
+                  Experienced, insured, and certified grounds specialists in Buffalo, NY.
+                </p>
+              </div>
             </div>
           </div>
 

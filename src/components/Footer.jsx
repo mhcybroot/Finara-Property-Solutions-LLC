@@ -15,9 +15,11 @@ export default function Footer() {
           {/* Col 1: Brand info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-finara-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20">
-                <Trees className="w-5 h-5 text-white" />
-              </div>
+              <img 
+                src="/assets/logo.png" 
+                alt="Finara Property Solutions LLC" 
+                className="h-10 w-auto bg-white/95 p-1 rounded-xl shadow-sm"
+              />
               <span className="font-black text-lg tracking-tight">
                 <span className="text-white">FINARA </span>
                 <span className="text-finara-500">PROPERTY SOLUTIONS</span>

@@ -84,7 +84,7 @@ export default function Hero() {
               {/* Main Image Card */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100">
                 <img
-                  src="/images/hero_landscape.jpg"
+                  src="/assets/hero-main.png"
                   alt="Manicured lawn care and landscaping in Buffalo, NY by Finara Property Solutions"
                   className="w-full h-[440px] sm:h-[480px] object-cover hover:scale-105 transition-transform duration-700"
                 />
@@ -106,10 +106,12 @@ export default function Hero() {
               </div>
 
               {/* Floating Badge 1 */}
-              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-finara-100 flex items-center justify-center text-finara-700 font-bold">
-                  <Award className="w-5 h-5" />
-                </div>
+              <div className="absolute -top-4 -left-4 sm:-left-6 bg-white p-3 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+                <img 
+                  src="/assets/trust-badge.png" 
+                  alt="100% Quality" 
+                  className="w-11 h-11 object-contain"
+                />
                 <div>
                   <div className="text-xs font-bold text-slate-900">100% Quality & Speed</div>
                   <div className="text-[11px] text-slate-500">Asset & Property Protection</div>

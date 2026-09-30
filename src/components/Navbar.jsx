@@ -64,18 +64,11 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-finara-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
-                <Trees className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-black text-lg sm:text-xl tracking-tight leading-tight">
-                  <span className="text-slate-900">FINARA </span>
-                  <span className="text-finara-500">PROPERTY SOLUTIONS</span>
-                </span>
-                <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">
-                  Landscaping & Grounds Maintenance • Buffalo, NY
-                </span>
-              </div>
+              <img 
+                src="/assets/logo.png" 
+                alt="Finara Property Solutions LLC" 
+                className="h-10 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+              />
             </a>
 
             {/* Desktop Nav */}
