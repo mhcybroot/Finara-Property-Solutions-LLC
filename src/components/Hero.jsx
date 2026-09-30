@@ -22,7 +22,7 @@ export default function Hero() {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
-              Elevate Your Property with <span className="text-transparent bg-clip-text bg-gradient-to-r from-finara-700 to-emerald-600">Expert Landscaping</span>
+              Elevate Your Property with <span className="text-transparent bg-clip-text bg-gradient-to-r from-finara-700 via-finara-600 to-teal-500">Expert Landscaping</span>
             </h1>
 
             {/* Subtext */}
@@ -118,7 +118,7 @@ export default function Hero() {
 
               {/* Floating Badge 2 */}
               <div className="absolute -bottom-5 -right-4 sm:-right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-emerald-100 flex items-center justify-center text-emerald-700 font-bold">
+                <div className="w-10 h-10 rounded-xl bg-finara-100 flex items-center justify-center text-finara-700 font-bold">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <div>

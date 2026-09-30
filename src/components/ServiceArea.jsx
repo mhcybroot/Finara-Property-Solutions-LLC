@@ -36,7 +36,7 @@ export default function ServiceArea() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                 {locations.map((loc, idx) => (
                   <div key={idx} className="flex items-center gap-2 text-sm text-slate-700 font-medium">
-                    <div className="w-5 h-5 rounded-full bg-emerald-100 text-finara-700 flex items-center justify-center shrink-0">
+                    <div className="w-5 h-5 rounded-full bg-finara-100 text-finara-700 flex items-center justify-center shrink-0">
                       <Check className="w-3.5 h-3.5" />
                     </div>
                     <span>{loc}</span>

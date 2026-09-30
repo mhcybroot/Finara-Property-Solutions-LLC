@@ -136,8 +136,8 @@ ${formData.name}`;
 
             </div>
 
-            <div className="p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-xs text-emerald-900 flex items-center gap-3">
-              <Shield className="w-5 h-5 text-emerald-700 shrink-0" />
+            <div className="p-4 rounded-xl bg-finara-50 border border-finara-200 text-xs text-finara-900 flex items-center gap-3">
+              <Shield className="w-5 h-5 text-finara-700 shrink-0" />
               <span>
                 <strong>FINARA PROPERTY SOLUTIONS LLC</strong> is fully licensed and insured for commercial & residential property services in New York.
               </span>
@@ -151,7 +151,7 @@ ${formData.name}`;
               
               {submitted ? (
                 <div className="text-center py-12 space-y-4">
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-700 rounded-full flex items-center justify-center mx-auto">
+                  <div className="w-16 h-16 bg-finara-100 text-finara-700 rounded-full flex items-center justify-center mx-auto">
                     <CheckCircle2 className="w-10 h-10" />
                   </div>
                   <h3 className="text-2xl font-bold text-slate-900">Estimate Request Generated!</h3>
