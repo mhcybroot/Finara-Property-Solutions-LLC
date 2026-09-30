@@ -15,11 +15,12 @@ export default function Footer() {
           {/* Col 1: Brand info */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-finara-700 flex items-center justify-center text-finara-300 shadow-md">
-                <Trees className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-finara-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20">
+                <Trees className="w-5 h-5 text-white" />
               </div>
-              <span className="font-extrabold text-lg text-white tracking-tight">
-                FINARA PROPERTY SOLUTIONS LLC
+              <span className="font-black text-lg tracking-tight">
+                <span className="text-white">FINARA </span>
+                <span className="text-finara-500">PROPERTY SOLUTIONS</span>
               </span>
             </div>
             
@@ -30,7 +31,7 @@ export default function Footer() {
             <div className="pt-2 space-y-2 text-xs text-slate-300">
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-finara-400 shrink-0" />
-                <a href="tel:7162748090" className="hover:text-white font-bold text-finara-300 transition-colors">
+                <a href="tel:7162748090" className="hover:text-white font-bold text-finara-400 transition-colors">
                   (716) 274-8090 (Direct Line)
                 </a>
               </div>

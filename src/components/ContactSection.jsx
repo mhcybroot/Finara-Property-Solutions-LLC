@@ -71,14 +71,14 @@ ${formData.name}`;
               
               {/* Phone Line 1 */}
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-finara-700 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 text-finara-400 flex items-center justify-center shrink-0 shadow-sm border border-slate-800">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider text-slate-500 font-bold">Primary Phone Line</h4>
                   <a 
                     href="tel:7162748090"
-                    className="text-base sm:text-lg font-extrabold text-finara-800 hover:text-finara-950 transition-colors block mt-0.5"
+                    className="text-base sm:text-lg font-black text-slate-900 hover:text-finara-600 transition-colors block mt-0.5"
                   >
                     (716) 274-8090
                   </a>
@@ -88,14 +88,14 @@ ${formData.name}`;
 
               {/* Phone Line 2 - Vendors */}
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-slatepro-900 text-white flex items-center justify-center shrink-0 shadow-sm">
-                  <Briefcase className="w-6 h-6 text-finara-400" />
+                <div className="w-12 h-12 rounded-xl bg-slate-900 text-finara-400 flex items-center justify-center shrink-0 shadow-sm border border-slate-800">
+                  <Briefcase className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider text-slate-500 font-bold">Vendor & Asset Line</h4>
                   <a 
                     href="tel:7162749914"
-                    className="text-base sm:text-lg font-extrabold text-slate-900 hover:text-finara-700 transition-colors block mt-0.5"
+                    className="text-base sm:text-lg font-black text-slate-900 hover:text-finara-600 transition-colors block mt-0.5"
                   >
                     716-274-9914
                   </a>
@@ -105,14 +105,14 @@ ${formData.name}`;
 
               {/* Email */}
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-finara-700 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 text-finara-400 flex items-center justify-center shrink-0 shadow-sm border border-slate-800">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
                   <h4 className="text-xs uppercase tracking-wider text-slate-500 font-bold">Email Inquiries</h4>
                   <a 
                     href="mailto:info@finaraprosolutions.com"
-                    className="text-base font-bold text-finara-800 hover:text-finara-950 transition-colors block mt-0.5"
+                    className="text-base font-bold text-slate-900 hover:text-finara-600 transition-colors block mt-0.5"
                   >
                     info@finaraprosolutions.com
                   </a>
@@ -122,7 +122,7 @@ ${formData.name}`;
 
               {/* Location */}
               <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-finara-700 text-white flex items-center justify-center shrink-0 shadow-sm">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 text-finara-400 flex items-center justify-center shrink-0 shadow-sm border border-slate-800">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
@@ -305,9 +305,9 @@ ${formData.name}`;
 
                   <button
                     type="submit"
-                    className="w-full py-3.5 bg-finara-700 hover:bg-finara-800 text-white font-extrabold rounded-xl shadow-lg shadow-finara-900/15 transition-all duration-200 flex items-center justify-center gap-2 text-sm"
+                    className="w-full py-3.5 bg-finara-500 hover:bg-finara-600 text-slate-950 font-black rounded-xl shadow-lg shadow-amber-500/25 transition-all duration-200 flex items-center justify-center gap-2 text-sm"
                   >
-                    <Send className="w-4 h-4" />
+                    <Send className="w-4 h-4 text-slate-950" />
                     <span>Send Estimate Request</span>
                   </button>
                 </form>

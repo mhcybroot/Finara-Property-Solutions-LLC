@@ -89,9 +89,9 @@ export default function Services() {
                     alt={service.title} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 to-transparent" />
                   <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between">
-                    <div className="w-10 h-10 rounded-xl bg-finara-700 text-white flex items-center justify-center shadow-md">
+                    <div className="w-10 h-10 rounded-xl bg-slate-900 text-finara-400 group-hover:bg-finara-500 group-hover:text-slate-950 flex items-center justify-center shadow-md transition-colors">
                       <IconComponent className="w-5 h-5" />
                     </div>
                   </div>
@@ -100,7 +100,7 @@ export default function Services() {
                 {/* Content */}
                 <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
                   <div className="space-y-2.5">
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-finara-700 transition-colors">
+                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-finara-600 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed">
@@ -148,7 +148,7 @@ export default function Services() {
             <div className="shrink-0 flex items-center gap-3">
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 bg-finara-600 hover:bg-finara-500 text-white px-6 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-md"
+                className="inline-flex items-center gap-2 bg-finara-500 hover:bg-finara-600 text-slate-950 px-6 py-3.5 rounded-xl font-extrabold text-sm transition-colors shadow-md shadow-amber-500/20"
               >
                 <span>Request Custom Quote</span>
                 <ArrowRight className="w-4 h-4" />
@@ -156,7 +156,7 @@ export default function Services() {
             </div>
           </div>
           {/* Decorative background shape */}
-          <div className="absolute right-0 bottom-0 w-80 h-80 bg-finara-900/40 rounded-full blur-2xl pointer-events-none -mr-20 -mb-20" />
+          <div className="absolute right-0 bottom-0 w-80 h-80 bg-amber-500/10 rounded-full blur-2xl pointer-events-none -mr-20 -mb-20" />
         </div>
 
       </div>

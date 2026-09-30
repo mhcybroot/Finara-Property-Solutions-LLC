@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Left Column: Text & CTAs */}
           <div className="lg:col-span-7 space-y-7">
             {/* Top Pill */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-finara-50 border border-finara-200/80 text-finara-800 text-xs sm:text-sm font-bold tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-finara-50 border border-finara-200/90 text-finara-900 text-xs sm:text-sm font-bold tracking-wide">
               <span className="flex h-2 w-2 rounded-full bg-finara-500 animate-pulse"></span>
               <Leaf className="w-4 h-4 text-finara-600" />
               <span>Dedicated Landscaping & Grounds Care • Buffalo, NY</span>
@@ -22,12 +22,12 @@ export default function Hero() {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.12]">
-              Elevate Your Property with <span className="text-transparent bg-clip-text bg-gradient-to-r from-finara-700 via-finara-600 to-teal-500">Expert Landscaping</span>
+              Professional Property <span className="text-finara-500">Landscaping</span>
             </h1>
 
             {/* Subtext */}
             <p className="text-lg sm:text-xl text-slate-600 max-w-2xl font-normal leading-relaxed">
-              <strong>FINARA PROPERTY SOLUTIONS LLC</strong> provides dedicated residential and commercial landscaping across Buffalo, NY & Surrounding Areas. Focused on speed, compliance, and pristine exterior grounds quality.
+              <strong>FINARA PROPERTY SOLUTIONS LLC</strong> delivers trusted residential and commercial landscaping across Buffalo, NY & Surrounding Areas. Dedicated to speed, compliance, and pristine exterior grounds quality.
             </p>
 
             {/* Feature Highlights */}
@@ -49,14 +49,14 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-3 bg-finara-700 hover:bg-finara-800 text-white px-7 py-4 rounded-xl font-bold text-base shadow-lg shadow-finara-900/15 transition-all duration-200 hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center gap-3 bg-finara-500 hover:bg-finara-600 text-slate-950 px-7 py-4 rounded-xl font-extrabold text-base shadow-lg shadow-amber-500/25 transition-all duration-200 hover:-translate-y-0.5"
               >
                 <span>Request Free Estimate</span>
                 <ArrowRight className="w-5 h-5" />
               </a>
               <a
                 href="tel:7162748090"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 px-7 py-4 rounded-xl font-bold text-base transition-all duration-200 shadow-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 px-7 py-4 rounded-xl font-bold text-base transition-all duration-200 shadow-sm"
               >
                 <Phone className="w-5 h-5 text-finara-600" />
                 <span>Call (716) 274-8090</span>
@@ -94,8 +94,8 @@ export default function Hero() {
 
                 {/* Bottom card content */}
                 <div className="absolute bottom-6 left-6 right-6 text-white space-y-2">
-                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-finara-700/90 backdrop-blur-sm text-xs font-bold text-white">
-                    <Sparkles className="w-3.5 h-3.5 text-finara-300" />
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-slate-900/90 backdrop-blur-sm text-xs font-bold text-finara-400 border border-slate-800">
+                    <Sparkles className="w-3.5 h-3.5 text-finara-400" />
                     <span>Buffalo Grounds Excellence</span>
                   </div>
                   <h3 className="text-xl font-bold tracking-tight">Complete Lawn Care & Bed Design</h3>

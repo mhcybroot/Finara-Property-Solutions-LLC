@@ -64,14 +64,15 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-finara-700 to-finara-950 flex items-center justify-center text-white shadow-md shadow-finara-900/10 group-hover:scale-105 transition-transform">
-                <Trees className="w-6 h-6 text-finara-300" />
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-finara-500 to-amber-600 flex items-center justify-center text-white shadow-md shadow-amber-500/20 group-hover:scale-105 transition-transform">
+                <Trees className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight leading-tight">
-                  FINARA PROPERTY SOLUTIONS
+                <span className="font-black text-lg sm:text-xl tracking-tight leading-tight">
+                  <span className="text-slate-900">FINARA </span>
+                  <span className="text-finara-500">PROPERTY SOLUTIONS</span>
                 </span>
-                <span className="text-[11px] uppercase tracking-widest text-finara-700 font-bold">
+                <span className="text-[10px] uppercase tracking-widest text-slate-500 font-bold">
                   Landscaping & Grounds Maintenance • Buffalo, NY
                 </span>
               </div>
@@ -98,7 +99,7 @@ export default function Navbar() {
               </a>
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center gap-2 bg-finara-700 hover:bg-finara-800 text-white px-5 py-2.5 rounded-lg font-bold text-xs transition-all duration-200 shadow-sm group"
+                className="inline-flex items-center justify-center gap-2 bg-finara-500 hover:bg-finara-600 text-slate-950 px-5 py-2.5 rounded-lg font-extrabold text-xs transition-all duration-200 shadow-sm shadow-amber-500/20 group"
               >
                 <span>Request Free Quote</span>
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
