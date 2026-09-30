@@ -78,7 +78,7 @@ export default function WhyChooseUs() {
             <div className="pt-2">
               <a
                 href="#contact"
-                className="inline-flex items-center justify-center bg-finara-700 hover:bg-finara-800 text-white font-bold text-sm px-6 py-3.5 rounded-xl shadow-md transition-colors"
+                className="inline-flex items-center justify-center bg-finara-500 hover:bg-finara-600 text-slate-950 font-black text-sm px-6 py-3.5 rounded-xl shadow-md shadow-amber-500/20 transition-all"
               >
                 Schedule Service in Buffalo
               </a>

@@ -89,9 +89,9 @@ export default function Gallery() {
             <button
               key={tab.id}
               onClick={() => setFilter(tab.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black transition-all duration-200 ${
                 filter === tab.id
-                  ? 'bg-finara-700 text-white shadow-md'
+                  ? 'bg-finara-500 text-slate-950 shadow-md shadow-amber-500/20'
                   : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'
               }`}
             >

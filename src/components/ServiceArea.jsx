@@ -84,7 +84,7 @@ export default function ServiceArea() {
                 <div className="pt-2">
                   <a
                     href="#contact"
-                    className="block w-full text-center bg-finara-600 hover:bg-finara-500 text-white font-bold py-3 rounded-xl transition-colors text-sm shadow-md"
+                    className="block w-full text-center bg-finara-500 hover:bg-finara-600 text-slate-950 font-black py-3 rounded-xl transition-colors text-sm shadow-md shadow-amber-500/20"
                   >
                     Request Service In Your Area
                   </a>
